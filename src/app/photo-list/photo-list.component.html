@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+<div class="container" >
+  <div class="item" *ngFor="let selectedPhoto of data" [routerLink]='"/photo/"+selectedPhoto.id'>
+    <a >
+      <img  class="center" src={{selectedPhoto.thumbnailUrl}} >
+      <div  class="center" style='width: 130px; text-align: center;'>{{selectedPhoto.title}}</div>
+    </a>
+  </div>
+</div>
+
+
+<!-- <div class="container" >
+    <div class="row">
+      <app-display-photo   [singlePhoto]="selectedPhoto" *ngFor="let selectedPhoto of data" [routerLink]='"/photo/"+selectedPhoto.id'></app-display-photo>
+    </div>
+</div> -->
+
+
+<!-- <div class="container" >
+  <div class="item"  (click)="onSelect(selectedPhoto)" *ngFor="let selectedPhoto of data">
+
+    <a >
+      <img  class="center" src={{selectedPhoto.thumbnailUrl}} >
+      <div  class="center" style='width: 130px; text-align: center;'>{{selectedPhoto.title}}</div>
+    </a>
+  </div>
+</div> -->
+

@@ -1,0 +1,25 @@
+<img src={{photoModel.url}}>
+<form>
+  <div class="form-group col-6">
+    <label>Photo album id:</label>
+    <input type="number" class="form-control" name="photoModelAlbumId" placeholder="Enter Album id" [(ngModel)]="photoModel.albumId">
+  </div>
+  <div class="form-group col-6">
+    <label>Photo id:</label>
+    <input type="number" class="form-control" name="photoModelId" placeholder="Enter Photo id" [(ngModel)]="photoModel.id">
+  </div>
+  <div class="form-group col-6">
+    <label>Title:</label>
+    <input class="form-control" name="photoModelTitle" placeholder="Enter Title" [(ngModel)]="photoModel.title">
+  </div>
+  <div class="form-group col-6">
+    <label>Url:</label>
+    <input class="form-control" type="url" name="photoModelUrl" placeholder="Enter Url" [(ngModel)]="photoModel.url">
+  </div>
+  <div class="form-group col-6">
+    <label>Thumbnail Url:</label>
+    <input class="form-control" type="url" name="photoModelThumbnailUrl" placeholder="Enter Thumbnail Url" [(ngModel)]="photoModel.thumbnailUrl">
+  </div>
+  <button class="btn btn-danger" (click)="postPhoto()">Add</button>
+  <button class="btn btn-secondary" (click)="goToPhotos()">Cancel</button>
+</form>

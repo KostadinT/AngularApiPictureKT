@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+nav a:visited, a:link{
+  color: #607d88;
+}
+
+nav a:hover{
+  color: aliceblue;
+  background-color:  #00CED1
+}
+
+
+nav a.active{
+  color:  aliceblue;
+  background-color: #6495ED
+}
+
+.photo-lar{
+  color:  #4682B4;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.item {
+  margin: 4px;
+  flex: 0 1 calc(20% - 8px);
+}
+
+.container {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center:hover{
+  box-shadow: 0 6px 12px 0 rgba(24, 156, 173, 0.973), 0 9px 30px 0 rgba(24, 156, 173, 0.973);
+  transition-delay: 200ms;
+  transition: 800ms;
+}
+
+h1 {
+  color: #111;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 275px;
+  font-weight: bold;
+  letter-spacing: -1px; line-height: 1;
+  text-align: center;
+}

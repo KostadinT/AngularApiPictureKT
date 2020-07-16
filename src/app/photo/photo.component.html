@@ -1,0 +1,32 @@
+<img src={{photoModel.url}}>
+<form>
+    <button class="btn btn-warning" (click)="isEdit = !isEdit">Edit</button>
+    <br>
+  <div class="form-group col-6">
+    <label>Photo album:</label>
+    <input [disabled]="isEdit" type="number" class="form-control" name="photoModelAlbumId" [(ngModel)]="photoModel.albumId">
+  </div>
+  <div class="form-group col-6">
+    <label>Photo id:</label>
+    <input [disabled]="isEdit" type="number" class="form-control" name="photoModelId" [(ngModel)]="photoModel.id">
+  </div>
+  <div class="form-group col-6">
+    <label>Title:</label>
+    <input [disabled]="isEdit" class="form-control" name="photoModelTitle" [(ngModel)]="photoModel.title">
+  </div>
+  <div class="form-group col-6">
+    <label>Url:</label>
+    <input [disabled]="true" type="url" class="form-control" name="photoModelUrl" [(ngModel)]="photoModel.url">
+  </div>
+  <div class="form-group col-6">
+    <label>Thumbnail Url:</label>
+    <input [disabled]="true" type="url" class="form-control" name="photoModelThumbnailUrl" [(ngModel)]="photoModel.thumbnailUrl">
+  </div>
+  <button class="btn btn-primary" (click)="putPhoto()">Save changes</button>
+  <button class="btn btn-danger" (click)="deletePhoto()">Delete</button>
+</form>
+<div>
+</div>
+<div>
+  <button class="btn btn-secondary"(click)="goToPhotos()">Back</button>
+</div>
